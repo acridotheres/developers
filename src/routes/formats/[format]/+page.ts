@@ -8,6 +8,9 @@ export async function load({ params }) {
 			content: content.default,
 			metadata: content.metadata as {
         name: string;
+				developer: string;
+				copyrighted: boolean;
+				website?: string;
         extensions: string[];
       }
 		};
