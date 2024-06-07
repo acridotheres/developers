@@ -1,0 +1,7 @@
+---
+name: ZIP
+extensions: 
+  - zip
+---
+
+ZIP
