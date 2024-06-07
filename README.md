@@ -1,3 +1,3 @@
-# Acridotheres Developers website
+# Acridotheres for Developers
 
 - [Archive format documentations](./src/pages/formats/)
