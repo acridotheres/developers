@@ -1,7 +1,6 @@
 ---
 name: ZIP
 developer: PKWARE, Inc.
-copyrighted: true
 website: https://support.pkware.com/pkzip/appnote
 extensions:
   - zip

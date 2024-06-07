@@ -9,7 +9,6 @@ export async function load({ params }) {
 			metadata: content.metadata as {
         name: string;
 				developer: string;
-				copyrighted: boolean;
 				website?: string;
         extensions: string[];
       }
