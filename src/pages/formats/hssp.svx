@@ -1,0 +1,44 @@
+---
+name: HSSP
+developer: Leonard Lesinski
+website: https://developers.acridotheres.com/formats/hssp
+extensions:
+  - hssp
+---
+
+## About HSSP
+
+HSSP is being developed as a simple archive format, allowing for the storage of up to 4,294,967,295 (=2^32, the highest possible Uint32 value) files in a single archive.
+Every file can be up to 16 exbibytes (2^64 B) in size. In total, the archive can hold up to 64 robibytes (2^86 B) of data, thats why the format is called HSSP (Huge Size Supporting Package). The format is designed to be simple and easy to implement, while still being able to store large amounts of data.
+
+## History of HSSP
+
+HSSP is being developed since March 2023 and receives updates since then. The format is still in development and may change with future updates.
+
+Since version 4 of the format, the format is considered stable and no breaking changes are expected to be made.
+
+### Version history
+
+- 1: Initial version
+- 2: Fixed the magic value from `SFA\x00` to `HSSP` (SFA was standing for Secure File Archive, the development name of the format)
+- 3: File header is now twice as big for no reason
+
+#### Version 4
+
+- Added version number to the file header
+- Added compression support
+- Added file metadata support
+- Added a file index to the beginning of the file, was previously inbetween the files
+- Added file splitting support
+- Removed a so-called "main file" which indicated the most important file in the archive, this has been replaced with an attribute in the file metadata
+
+#### Version 5
+
+- Added flags to make compression, encryption and splitting more safe so the parser doesn't have to guess the settings from hashes
+
+#### Version 6
+
+- Added file chaining to group files together for better compression and encryption as well as faster access
+- Index and files are compressed and encrypted separately
+- Added a new format to store the used compression method
+- Removed unused flags F9-F24 because they were never used
