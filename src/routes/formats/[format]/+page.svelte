@@ -15,7 +15,7 @@
 	</tr>
 	<tr>
 		<th>Common file extensions</th>
-		<td>{data.metadata.extensions.join(', ')}</td>
+		<td>{data.metadata.extensions.map(ext => '.' + ext).join(', ')}</td>
 	</tr>
 </table>
 

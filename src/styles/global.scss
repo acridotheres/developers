@@ -1,0 +1,61 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import '@fontsource-variable/readex-pro';
+
+body {
+  font-family: 'Readex Pro Variable', sans-serif;
+  font-weight: 300;
+}
+
+main.article {
+  max-width: 50rem;
+  text-align: justify;
+
+  p {
+    margin: 1.5rem 0;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    border-bottom: 0.25rem solid #0004;
+    margin: 1.5rem 0;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+    border-bottom: 0.125rem solid #0004;
+  }
+
+  a:not(.no-underline) {
+    text-decoration: underline;
+  }
+
+  table {
+    width: fit-content;
+    margin: 1.5rem auto;
+    background-color: #0004;
+    border-radius: 0.5rem;
+    border: 1px solid #000;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    th, td {
+      padding: 0.5rem;
+
+      &:not(:last-child) {
+        border-right: 1px solid #000;
+      }
+    }
+
+    tr:not(:last-child) th, tr:not(:last-child) td {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
