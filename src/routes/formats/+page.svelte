@@ -14,7 +14,7 @@
     <h3 class="text-2xl font-medium">{page.name}<span class="text-lg pl-2 text-neutral-400">by {page.developer}</span></h3>
     <p class="mt-2">
       {#each page.extensions as extension}
-        <span class="inline-block bg-neutral-200 p-1 leading-4 rounded-lg">.{extension}</span>
+        <span class="inline-block bg-neutral-200 p-1 leading-4 rounded-lg mr-1">.{extension}</span>
       {/each}
     </p>
   </a>
