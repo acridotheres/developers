@@ -11,7 +11,8 @@ export async function load({ params }) {
 				order: number;
 				prev?: string;
 				next?: string;
-			}
+			},
+			path: params.page
 		};
 	} catch {
 		error(404, 'Not Found');

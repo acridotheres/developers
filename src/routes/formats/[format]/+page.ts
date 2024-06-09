@@ -12,7 +12,8 @@ export async function load({ params }) {
 				website?: string;
         extensions: string[];
 				endianness?: string;
-      }
+      },
+			path: params.format
 		};
 	} catch {
 		error(404, 'Not Found');

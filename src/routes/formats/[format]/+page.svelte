@@ -6,7 +6,9 @@
 	<title>{data.metadata.name} archive format | Acridotheres for Developers</title>
 </svelte:head>
 
-<h1>{data.metadata.name} archive format</h1>
+<a href="https://github.com/acridotheres/developers/blob/main/src/pages/formats/{data.path}.svx?plain=1" class="block w-full text-right mt-6" target="_blank">view this page on GitHub</a>
+
+<h1 class="mt-0">{data.metadata.name} archive format</h1>
 
 <table>
 	<tr>
