@@ -22,5 +22,5 @@
 </main>
 
 <footer class="bg-black text-white p-1 text-center text-sm">
-	<p>&copy; 2024 Acridotheres Contributors</p>
+	<p>&copy; 2024 Acridotheres contributors</p>
 </footer>

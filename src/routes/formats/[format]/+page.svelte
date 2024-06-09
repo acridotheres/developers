@@ -17,6 +17,10 @@
 		<th>Common file extensions</th>
 		<td>{data.metadata.extensions.map(ext => '.' + ext).join(', ')}</td>
 	</tr>
+	<tr>
+		<th>Endianness</th>
+		<td>{data.metadata.endianness ? data.metadata.endianness + ' endian' : 'unknown'}</td>
+	</tr>
 </table>
 
 <svelte:component this={data.content} />

@@ -12,9 +12,14 @@ body {
 main.article {
   max-width: 50rem;
   text-align: justify;
+  hyphens: auto;
 
   ul, p {
     margin: 1.5rem 0;
+  }
+
+  h1, h2, h3, h4, h5, h6, table {
+    text-align: left;
   }
 
   h1 {
@@ -60,12 +65,14 @@ main.article {
 
   table {
     width: fit-content;
+    max-width: 100%;
     margin: 1.5rem auto;
     background-color: #0004;
     border-radius: 0.5rem;
     border: 1px solid #000;
     border-collapse: separate;
     border-spacing: 0;
+    overflow-x: scroll;
 
     th, td {
       padding: 0.5rem;
@@ -75,8 +82,14 @@ main.article {
       }
     }
 
-    tr:not(:last-child) th, tr:not(:last-child) td {
+    tr:not(:last-child) th, tr:not(:last-child) td, thead th {
       border-bottom: 1px solid #000;
     }
+  }
+
+  code {
+    background-color: #0004;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.125rem;
   }
 }

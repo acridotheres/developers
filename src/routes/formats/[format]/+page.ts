@@ -11,6 +11,7 @@ export async function load({ params }) {
 				developer: string;
 				website?: string;
         extensions: string[];
+				endianness?: string;
       }
 		};
 	} catch {
