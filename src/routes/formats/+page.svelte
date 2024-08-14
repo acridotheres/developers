@@ -7,6 +7,10 @@
   }[] };
 </script>
 
+<svelte:head>
+  <title>List of documented formats | Acridotheres for Developers</title>
+</svelte:head>
+
 <h1>List of documented formats</h1>
 
 {#each data.pages as page}

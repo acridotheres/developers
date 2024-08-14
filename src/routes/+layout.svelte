@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Acridotheres for Developers</title>
+	<title>Home | Acridotheres for Developers</title>
 </svelte:head>
 
 <header class="bg-black fixed top-0 left-0 w-full h-12 text-white">

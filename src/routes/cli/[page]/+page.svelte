@@ -4,7 +4,7 @@
 
 <a href="https://github.com/acridotheres/developers/blob/main/src/pages/cli/{data.path}.md?plain=1" class="block w-full text-right mt-6" target="_blank">view this page on GitHub</a>
 
-<h1 class="mt-0">{data.metadata.title}</h1>
+<h1 class="mt-0">{data.metadata.title} | Acridotheres for Developers</h1>
 
 <svelte:component this={data.content} />
 

@@ -6,6 +6,10 @@
   }[] };
 </script>
 
+<svelte:head>
+  <title>List of CLI documentation pages | Acridotheres for Developers</title>
+</svelte:head>
+
 <h1>List of CLI documentation pages</h1>
 
 <ul>
