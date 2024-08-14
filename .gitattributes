@@ -1,3 +1,2 @@
-*.svx linguist-language=markdown
+*.md linguist-language=markdown
 *.md linguist-detectable
-*.svx linguist-detectable

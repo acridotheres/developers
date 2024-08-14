@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit';
 
 export async function load({ params }) {
 	try {
-		const content = await import(`$p/cli/${params.page}.svx`);
+		const content = await import(`$p/cli/${params.page}.md`);
 
 		return {
 			content: content.default,

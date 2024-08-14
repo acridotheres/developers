@@ -1,5 +1,5 @@
 export async function load() {
-	const pages = import.meta.glob('/src/pages/cli/*.svx', { eager: true }) as Record<
+	const pages = import.meta.glob('/src/pages/cli/*.md', { eager: true }) as Record<
 		string,
 		{
 			metadata: {
@@ -13,7 +13,7 @@ export async function load() {
 		const page = {
       title: pages[key].metadata.title,
       order: pages[key].metadata.order,
-			path: key.split('/').at(-1)?.replace('.svx', '') as string,
+			path: key.split('/').at(-1)?.replace('.md', '') as string,
 		};
 		return page;
 	});
