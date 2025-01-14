@@ -10,6 +10,7 @@ export async function load() {
 	>;
 	const keys = Object.keys(pages);
 	const pageList = keys.map((key) => {
+		console.error(key, pages[key]);
 		const page = {
       title: pages[key].metadata.title,
       filePath: pages[key].metadata.path,
