@@ -12,7 +12,7 @@ export async function load() {
 	const pageList = keys.map((key) => {
 		const page = {
       title: pages[key].metadata.title,
-      order: pages[key].metadata.order,
+      filePath: pages[key].metadata.path,
 			path: key.split('/').at(-1)?.replace('.md', '') as string,
 		};
 		return page;
