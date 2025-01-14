@@ -10,3 +10,6 @@
 <p>
   Our CLI is documented <a href="/cli">here</a>.
 </p>
+<p>
+  Acridotheres has also some custom files in extracted archives. <a href="/custom-files">List of custom files</a>
+</p>
